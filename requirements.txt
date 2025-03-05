@@ -1,0 +1,8 @@
+fastapi
+google-generativea
+google-genai
+pydantic
+python-dotenv
+tabulate
+termcolor
+uvicorn

@@ -1,0 +1,87 @@
+8-Bit: Penny | Brock | Squeak | Piper
+Amber: Piper | Bell | Carl | Crow | Pam
+Angelo: Kit | Max | Nany
+Ash: Antitank | Rosa | Frank | Bull
+Barley: Assasin | Miko | Kenji | Edgar | Mortis
+Bea: Thrower | Piper | Nany | Mandy | Mr P
+Bell: Nany | Darryl | Piper
+Berry: Assasin | Barley | Kenji | Mortis
+Bibi: Surge | El Primo | Cordelius | Shelly
+Bo: Sniper | Piper | Stu | Max | Leon
+Bonny: Piper | Darryl | RT | Collete
+Brock: Max | Nany | Piper | Mandy
+Bull: Nita | Antitank
+Buster: Rosa | Darryl | Jacky | Buzz | El Primo
+Buzz: Surge | Gale | Jacky
+Byron: Piper | Nany | Mandy | Sprout | Clancy | Lou
+Carl: Buzz | Surge | Darryl | Jacky | Gene
+Charlie: Penny | Larry | Juju
+Chester: Janet | Amber | Stu | Gale
+Chuck: Cordelius | Angelo | Clancy | Melodie
+Clancy: Bell | Tara | Penny
+Collete: Bell | Stu | Bea | Griff | Jesse
+Colt: Piper | Bell | Gus | Nani | Stu | Max | Mortis
+Cordelius: Frank | Buster | Surge | Nita
+Crow: Piper | Spike | Tank
+Darryl: Cordelius | Otis | Clancy
+Doug: Frank | Clancy | Griff
+Draco: Lou | Nita | Frank
+Dynamike: Miko | Mortis | Kenji | Edgar
+Edgar: Surge | Doug | Jacky | Shelly
+El Primo: Cordelius | Gale | Shelly
+Emz: Mortis | Barley | Juju | Larry | Janet
+Eve: Piper | Penny | Janet | Max
+Fang: Clancy | Otis | Shelly | Gale
+Frank: Antitank | Primo
+Gale: Janet | Amber | Thrower | Penny
+Gene: Mr P | Penny | Tara | Eve | Charlie | Bell
+Gray: Mr P | Charlie | Gus
+Griff: Lola | Stu | Bea
+Grom: Miko | Mortis | Assasin
+Gus: Piper | Mr P | Darryl
+Hank: Dynamike | Frank | Gale
+Jacky: Frank | Gale | Rosa
+Janet: Frank | Carl | Kenji | Bell
+Jesse: Thrower | Bell | Squeak
+Juju: Frank | Tick | Larry | Wallbreaker
+Kenji: Frank | Draco | Primo
+Kit: Charlie | Cordelius | RT | Chester
+Larry: Tick | Edgar | Kenji
+Leon: Crow | Stu | Pearl
+Lily: RT | Jacky | Bull | Shelly
+Lola: Bell | Penny | Amber
+Lou: Bell | Bea | Bo | Poco | Thrower
+Maisie: Barley | Stu | Bell | Penny
+Mandy: Nany | Tick | Mortis | Thrower
+Max: Crow | Gus | Pam | Stu
+Meple: Kenji | Frank | Ash
+Meg: Collete | Lou | Lola | Bea
+Melodie: Clancy | Cordelius | Buzz
+Miko: RT | Bull | Stu
+Moe: Penny | Darryl | Larry
+Mortis: Jacky | Shade | Bull | Gale | Shelly
+Mr P: Edgar | Mortis | Bibi
+Nany: Gene | Max | Darryl | Tick
+Nita: Larry | Barley | Juju | Willow | Spike | Griff
+Otis: Barley | Juju | Larry | Stu | Amber
+Pam: Jesse | Lou | 8-Bit | Collete
+Pearl: Lou | 8-Bit | Buster
+Penny: Thrower | Squeak | Kenji | Bo
+Piper: Nany | Tick | Kit | Kenji
+Poco: Emz | Mortis | Jesse
+RT: Thrower | Gus | Max | Bo
+Rico: Thrower | Brock | Piper | Stu
+Rosa: Emz | Frank | Antitank
+Ruffs: Buzz | Carl | Sprout | Assasin
+Sam: Surge | Lou | Griff
+Sandy: Nita | Janet | Kenji | Larry
+Shade: Frank | Lou | Jacky
+Shelly: Stu | Nita | Spike | Penny | Otis
+Spike: Thrower | Squeak | Carl | Piper
+Sprout: Miko | Mortis | Edgar | Frank
+Squeak: Assasin | Ash
+Stu: Healer | Sniper | Ruffs | Penny | Sandy
+Surge: Thrower | Ruffs | Tara | Charlie | Spike
+Tara: Thrower | Otis | Sandy | Janet
+Tick: Miko | Mortis | Darryl | Bibi
+Willow: Barley | Larry | Buzz

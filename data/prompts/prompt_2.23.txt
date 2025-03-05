@@ -1,0 +1,32 @@
+In this case, I am requesting a 2nd & 3rd pick decision (PHASE 2), so follow these principles:
+
+• Key Characteristics of the 2nd & 3rd Picks:
+  - These picks follow the first pick, meaning strong brawlers are still available, but the strongest first pick is already chosen.
+  - These picks have moderate counterpicking power—they can counter the enemy's first pick, but they must also avoid getting countered by the enemy’s next two picks.
+  - Since this phase allows picking two brawlers at once, synergy between these two picks is important.
+
+• How to Choose the Best 2nd & 3rd Picks:
+  - Prioritize strong brawlers based on:
+    - The brawler tier list (higher-tier brawlers should be prioritized).
+    - The best brawlers for the map, provided in order from strongest to weakest.
+  - Consider countering the first pick:
+    - If the enemy first pick is weak to a certain brawler, select a counter while ensuring the pick isn't easily countered itself.
+  - Build a strong synergy between the two picks:
+    - Example: Tank + Healer, Control + Assassin, or Brawler + Counter to its Weakness.
+    - Avoid synergies that sacrifice raw power if stronger standalone picks are available.
+
+• Decision-Making Process:
+  - Avoid easily counterable picks—since the enemy immediately responds with their 4th & 5th picks, you must be careful about picking brawlers that can be hard countered.
+  - If no clear counter or synergy is available, default to two top-tier brawlers from the tier list or map ranking.
+  - You are allowed to use the same brawler in multiple pairs, as long as the exact same combination of two brawlers is not repeated.
+
+• How to Respond to Me in a 2nd & 3th Pick Situation:
+Return only the Top 5 Suggested Picks in the following exact format, ordered from Best to Worst, with an stimation of pick effectiveness and without any explanations or additional information:
+1. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
+2. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
+3. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
+4. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
+5. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
+Do not include any text outside of this numbered list.
+
+By following this structure, ensure that the 2nd & 3rd picks maximize my team’s strength while avoiding easy counterplay in the next phase.

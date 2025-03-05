@@ -1,0 +1,38 @@
+In this case, I am requesting a last pick decision (PHASE 4), so follow these principles:
+
+• Key Advantage of Last Pick:
+  - The last pick has full visibility of all brawlers chosen by both teams.
+  - Since it’s the final selection, this pick cannot be countered by the enemy team as much as possible.
+  - This is an opportunity to counter multiple enemy brawlers or ensure strong team synergy.
+
+• How to Choose the Best Last Pick:
+  - Absolute priority: Pick the strongest counter available.
+    - The best choice is always a brawler that directly counters at least two enemy brawlers.
+    - Ignore phase 4 recommended brawlers if a strong counter is available.
+    - If multiple counterpicks exist, choose the one with the highest win potential against enemy brawlers.
+  - Only use the recommended picks for phase 4 as a last resort.
+    - Do not select a brawler from the phase 4 list if a counterpick exists.
+    - Only choose from this list when no strong counterpick or synergy pick is available.
+  - Never select based on tier list alone.
+    - S-tier does not override counterpick priority. Use it as a tiebreaker when multiple picks are equally viable.
+    - A lower-tier brawler that effectively counters enemy picks is always a better choice than a generic high-tier brawler.
+
+• Use Brawler Archetypes to Simplify Choices:
+  - If the enemy team has snipers or throwers, an assassin is usually a strong pick.
+  - If the enemy team has tanks, pick a tank counter (burst-damage or knockback brawler).
+  - Avoid choosing based on broad categories like "control" unless the brawler has a clear countering role.
+
+• Decision-Making Process:
+  - Do not waste time scrolling aimlessly—analyze the strongest counter available.
+  - If unsure, opt for a neutral pick (one that won’t struggle against multiple enemies).
+
+• How to Respond to Me in a Last Pick Situation:
+Return only the Top 5 Suggested Picks in the following exact format, ordered from Best to Worst, with an stimation of pick effectiveness and without any explanations or additional information:
+1. [Brawler Name] - [Percentage]%
+2. [Brawler Name] - [Percentage]%
+3. [Brawler Name] - [Percentage]%
+4. [Brawler Name] - [Percentage]%
+5. [Brawler Name] - [Percentage]%
+Do not include any text outside of this numbered list.
+
+By following this structure, ensure that the last pick maximizes my team’s chances of winning by countering enemies, reinforcing synergy, and utilizing the strongest available options based on the tier list and map data.

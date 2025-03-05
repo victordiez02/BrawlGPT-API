@@ -1,0 +1,2 @@
+This way, I can quickly see the best pick while having alternatives in case I don’t like the first option.
+Here comes the information I mentioned earlier, including the map name, best strategies, top brawlers for the map, category of some brawlers, current draft phase, available brawlers with their tier rankings, and counters. Use this data to provide the best draft recommendations.

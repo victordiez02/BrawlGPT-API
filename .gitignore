@@ -1,0 +1,40 @@
+# Ignorar la carpeta del entorno virtual
+brawlGPT-env/
+
+# Ignorar el archivo de variables secretas
+.env
+
+# Ignorar archivos y carpetas generadas automáticamente
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorar logs y archivos temporales
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignorar la carpeta donde se genera el prompt final
+final_prompt/
+
+# Ignorar configuraciones de IDEs (VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+*.iml
+
+# Ignorar dependencias y cachés de Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignorar archivos de compilación
+build/
+dist/
+*.egg-info/
+
+# Ignorar datos de pruebas y cobertura
+.coverage
+htmlcov/
+*.pytest_cache/
+tests/__pycache__/

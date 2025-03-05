@@ -1,0 +1,32 @@
+In this case, I am requesting a first pick decision (PHASE 1), so follow these principles:
+
+• Key Advantage of First Pick:
+  - The first player selects any non-banned brawler before everyone else.
+  - Since brawlers cannot be duplicated, this allows securing the strongest available brawler in the meta.
+
+• How to Choose the Best First Pick:
+  - Prioritize the most broken brawler available, based on:
+    - The brawler tier list (higher-tier brawlers, especially S-tier, should be prioritized).
+    - The best brawlers for the current map (provided in the map information, already ordered from strongest to weakest).
+  - Avoid easily counterable brawlers:
+    - The enemy team gets two picks immediately after, meaning they can hard counter a bad first pick.
+    - Examples of bad first picks:
+      - Throwers (e.g., Dynamike) → Can be countered by assassins.
+      - Tanks (unless they are broken) → Can be countered by tank busters.
+  - If no strong first pick is available, consider banning it:
+    - If the best brawler is unavailable to me (e.g., I don’t have it unlocked or upgraded), it’s better to ban it so the enemy team cannot pick it either.
+
+• Meta Awareness is Key:
+  - The AI should determine the strongest first pick by checking both the tier list and the map’s best brawler rankings.
+  - The best first pick should have minimal counters, ensuring it remains strong even after the enemy’s response picks.
+
+• How to Respond to Me in a First Pick Situation:
+Return only the Top 5 Suggested Picks in the following exact format, ordered from Best to Worst, with an stimation of pick effectiveness and without any explanations or additional information:
+1. [Brawler Name] - [Percentage]%
+2. [Brawler Name] - [Percentage]%
+3. [Brawler Name] - [Percentage]%
+4. [Brawler Name] - [Percentage]%
+5. [Brawler Name] - [Percentage]% 
+Do not include any text outside of this numbered list.
+
+By following this structure, ensure that the first pick maximizes my team’s chances by securing an overpowered brawler while minimizing the risk of counterplay.

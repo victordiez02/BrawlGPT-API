@@ -1,0 +1,33 @@
+Angelo: Heist | Hot Zone | Bounty | Knockout
+Janet: Gem Grab
+Nani: Bounty | Heist
+Brock: Knockout | Heist | Hot Zone | Gem Grab | Bounty
+Juju: All Modes
+Sprout: Knockout | Hot Zone | Bounty
+Barley: Heist | Hot Zone
+Larry: Brawl Ball | Hot Zone | Heist
+Surge: Brawl Ball | Heist | Gem Grab
+Collette: Heist
+Chuck: All Modes
+Rico: Gem Grab | Hot Zone | Heist | Brawl Ball
+Pearl: All Modes
+Tanks: Bounty | Heist | Knockout
+Hank: Bounty
+Jacky: Hot Zone | Brawl Ball
+Ash: Brawl Ball | Hot Zone
+Bibi: Brawl Ball | Hot Zone
+Controllers: All Modes
+Otis: All Modes
+Lou: Hot Zone | Brawl Ball | Gem Grab
+Gene: Knockout | Bounty | Gem Grab
+Jessie: Gem Grab | Hot Zone
+Assassins: Heist | Brawl Ball | Gem Grab | Hot Zone
+Melodie: Heist | Brawl Ball | Gem Grab | Hot Zone
+Stu: Heist | Brawl Ball | Gem Grab | Hot Zone | Knockout
+Mortis: Knockout | Brawl Ball | Bounty
+Support: Heist | Brawl Ball | Gem Grab | Hot Zone
+Berry: Heist | Brawl Ball | Gem Grab | Hot Zone
+Gus: Knockout | Bounty
+Max: Brawl Ball | Bounty | Hot Zone
+Gray: Knockout | Hot Zone (with 2 portals strategy)
+Edgar: All Modes

@@ -1,0 +1,33 @@
+In this case, I am requesting a 4th & 5th pick decision (PHASE 3), so follow these principles:
+
+• Key Characteristics of the 4th & 5th Picks:
+  - These picks occur after the 2nd & 3rd picks, meaning fewer strong brawlers remain available, but there is more information on the enemy team.
+  - These picks have greater counterpicking power than the 2nd & 3rd picks because they can counter multiple enemy selections.
+  - Since two brawlers are picked together, synergy and role balancing are key considerations.
+
+• How to Choose the Best 4th & 5th Picks:
+  - Maximum Prioritize on Countering the 2nd & 3rd enemy picks:
+    - If possible, select at least one direct counter to an enemy pick.
+    - The other pick should either provide synergy or remain neutral to avoid being countered.
+  - Secondly, prioritize strong brawlers based on:
+    - The best brawlers for the map, provided in order from strongest to weakest.
+    - The brawler tier list (higher-tier brawlers should be prioritized).
+  - Ensure good synergy between the two picks:
+    - If a strong brawler synergy (e.g., Tank + Healer) is available, it can be picked.
+    - Alternatively, picking a hard counter to an enemy brawler alongside a neutral pick can also be a strong strategy.
+
+• Decision-Making Process:
+  - Avoid weak or easily counterable picks—while these picks won’t be countered as heavily as the 2nd & 3rd picks, they still must not create a major disadvantage.
+  - If unsure, default to strong meta picks from the tier list or map ranking.
+  - You are allowed to use the same brawler in multiple pairs, as long as the exact same combination of two brawlers is not repeated.
+
+• How to Respond to Me in a 4th & 5th Pick Situation:
+Return only the Top 5 Suggested Picks in the following exact format, ordered from Best to Worst, with an stimation of pick effectiveness and without any explanations or additional information:
+1. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
+2. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
+3. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
+4. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
+5. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
+Do not include any text outside of this numbered list.
+
+By following this structure, ensure that the 4th & 5th picks optimize counterplay while reinforcing the team’s strength for the final phase of the draft.

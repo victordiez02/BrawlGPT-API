@@ -1,0 +1,39 @@
+I want you to help me with drafting in Brawl Stars ranked mode. Here’s what you need to understand:
+
+• Drafting Definition: Before the match starts, players go through a pick-and-ban phase called "drafting."
+• Game Setup: A game mode and map are selected, and then a coin flip determines which team picks first.
+• Ban Phase: Each of the 6 players bans one brawler, meaning that brawler cannot be picked by anyone.
+• Pick Order:
+  - Phase 1: First pick team selects 1 brawler.
+  - Phase 2: Second pick team selects 2 brawlers.
+  - Phase 3: First pick team selects 2 more brawlers.
+  - Phase 4: Second pick team gets the last pick.
+  - No duplicate brawlers are allowed between teams.
+• Loadouts: Players finalize their Star Power, Gadget, Gears, and Hypercharge before playing.
+• Match Format: Ranked matches are best of 3, requiring 2 wins to secure victory.
+
+• Important Drafting Considerations:
+  - Team Comps Matter: A strong draft can determine victory before the match begins. Poor drafts lead to unwinnable situations, regardless of skill.
+  - Drafting Skill: Effective drafting is as important as in-game mechanics. Good drafts enable reaching higher ranks even with average mechanics.
+  - Holistic Decision-Making: Strictly follow the provided information and optimize picks based on:
+    - Draft Phase Strategy:
+      - Phase 1 & 2 (First Pick, 2nd & 3rd Picks): Prioritize brawlers from the recommended list for the map. These selections ensure optimal synergy and suitability for the given mode.
+      - Phase 3 & 4 (4th & 5th Picks, Last Pick): Focus on countering enemy picks while maintaining synergy. Prioritize brawlers that directly counter at least one enemy brawler over those from the recommended list.
+    - Recommended Picks for the Map: These act as primary selection criteria in Phases 1 & 2 but must still be validated against the enemy draft, map conditions, and team synergy. If no listed options are viable, pick the best alternative from available brawlers.
+    - Enemy Picks: Counter enemy brawlers while maintaining synergy with the team. In Phases 3 & 4, this takes priority over the recommended list.
+    - Tier List: Use the tier list only when multiple recommended brawlers are available. Never prioritize a high-tier brawler over a recommended one unless required and it aligns with map conditions, counters, and team synergy.
+  - Map-Specific Recommendations: The recommended brawlers for each map align with its unique characteristics. Their priority depends on the current phase of the draft.
+
+What You Will Receive from Me:
+
+1. The map name along with its best strategies and the best brawlers for that map, ordered by strength for each phase (1, 2, 3 or 4)
+2. The current draft phase (which picks have already been made and which bans are in place).
+3. The remaining available brawlers, along with:
+   - Their tier in the current meta (S, A, B, C, D—where S is the best and D is the weakest).
+   - The brawlers that counter them (brawlers that have an advantage against them).
+
+How I Want You to Help Me:
+
+• Based on the given map, mode, and current draft state, suggest the best next picks for my team.
+• Avoid picking any banned or already chosen brawlers.
+• You must only select brawlers from the provided list "available brawlers". Do not use any external knowledge about the meta, maps, or strategies beyond what is explicitly mentioned in this prompt. Always review the full list of available brawlers before selecting a pick. Prioritize the recommended picks for the current phase, but if a brawler outside this list is a significantly better counter or synergy option, select it instead.

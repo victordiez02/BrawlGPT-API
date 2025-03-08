@@ -427,7 +427,7 @@ def generate_final_prompt(phase, selected_map, maps, brawlers, banned_brawlers, 
     # Añadir información del mapa seleccionado
     if selected_map in maps:
         final_content += "Selected Map Information\n"
-        final_content += str(selected_map) + "\n\n"
+        final_content += str(maps[selected_map]) + "\n\n"
     else:
         raise ValueError(f"The selected map '{selected_map}' is not found in the 'maps' dictionary.")
 

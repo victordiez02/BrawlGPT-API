@@ -133,7 +133,7 @@ brawlGPT-env\Scripts\activate.bat
 
 **Para abrir servidor local:**  
 
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 
 **TEMPORADA 35**
 

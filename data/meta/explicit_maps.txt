@@ -1,0 +1,29 @@
+Brawl Ball
+Banner: https://static.wikia.nocookie.net/brawlstars/images/4/4b/Brawl_Ball_Arena-Environment.png
+Center Stage https://static.wikia.nocookie.net/brawlstars/images/8/82/Center_Stage-Map.png
+Pinball Dreams https://static.wikia.nocookie.net/brawlstars/images/e/e9/Pinball_Dreams-Map.png
+Sneaky Fields https://static.wikia.nocookie.net/brawlstars/images/1/10/Sneaky_Fields-Map.png
+
+Hockey Brawl
+Banner: https://static.wikia.nocookie.net/brawlstars/images/7/78/Ice_Rink-Environment.png
+Below Zero: https://static.wikia.nocookie.net/brawlstars/images/d/d6/Below_Zero-Map.png
+Cool Box: https://static.wikia.nocookie.net/brawlstars/images/5/5f/Cool_Box-Map.png
+Super Center: https://static.wikia.nocookie.net/brawlstars/images/2/21/Super_Center-Map.png
+
+Atrapagemas
+Banner: https://static.wikia.nocookie.net/brawlstars/images/0/09/Mine-Environment.png
+Double Swoosh: https://static.wikia.nocookie.net/brawlstars/images/3/3e/Double_Swoosh-Map.png
+Hard rock mine: https://static.wikia.nocookie.net/brawlstars/images/b/bf/Hard_Rock_Mine-Map.png
+Undermine: https://static.wikia.nocookie.net/brawlstars/images/2/2b/Undermine-Map.png
+
+Zona restringida
+Banner: https://static.wikia.nocookie.net/brawlstars/images/1/1c/Skatepark-Environment.png
+Dueling Beetles: https://static.wikia.nocookie.net/brawlstars/images/5/51/Dueling_Beetles-Map.png
+Open Business: https://static.wikia.nocookie.net/brawlstars/images/2/22/Open_Business-Map.png
+Parallel Plays: https://static.wikia.nocookie.net/brawlstars/images/9/94/Parallel_Plays-Map.png
+
+Noqueo
+Banner: https://cdn-fankit.brawlify.com/banner_map_23.png
+Belle's Rock: https://static.wikia.nocookie.net/brawlstars/images/b/b5/Belle%27s_Rock-Map.png
+Flaring Phoenix: https://static.wikia.nocookie.net/brawlstars/images/c/cf/Flaring_Phoenix-Map.png
+Out in the open: https://static.wikia.nocookie.net/brawlstars/images/8/8c/Out_in_the_Open-Map.png

@@ -28,6 +28,11 @@ from app.services.gemini_service import call_gemini
 
 router = APIRouter()
 
+@router.get("/")
+def root():
+    """Endpoint para la raíz de la API."""
+    return {"message": "Brawl Stars API is working"}
+
 @router.post("/draft")
 def handle_draft(request: Request, draft_request: DraftRequest):
     """

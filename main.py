@@ -26,13 +26,13 @@ maps = load_maps("data/meta/maps.txt", brawlers)
 # Inicializar la aplicación FastAPI
 app = FastAPI()
 
-# Configuración de CORS para permitir solo el método GET
+# Configuración de CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Permite solicitudes desde cualquier origen.
+    allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["GET"],  # Permite solo el método GET
-    allow_headers=["*"],  # Permite cualquier header
+    allow_methods=["*"],
+    allow_headers=["*"]
 )
 
 # Almacenar `brawlers` y `maps` en `app.state` para que estén disponibles globalmente

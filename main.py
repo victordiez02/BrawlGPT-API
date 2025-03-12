@@ -15,6 +15,7 @@ Requiere una clave API de Gemini para funcionar correctamente.
 """
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from app.routes.draft_routes import router as draft_router
 from app.utils.config import load_data, load_maps
 
@@ -24,6 +25,15 @@ maps = load_maps("data/meta/maps.txt", brawlers)
 
 # Inicializar la aplicación FastAPI
 app = FastAPI()
+
+# Configuración de CORS para permitir solo el método GET
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Permite solicitudes desde cualquier origen.
+    allow_credentials=True,
+    allow_methods=["GET"],  # Permite solo el método GET
+    allow_headers=["*"],  # Permite cualquier header
+)
 
 # Almacenar `brawlers` y `maps` en `app.state` para que estén disponibles globalmente
 app.state.brawlers = brawlers

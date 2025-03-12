@@ -364,6 +364,7 @@ def execute_draft(phase, selected_map, maps, brawlers, banned_brawlers, team, pi
 
     # Imprimir el resumen en consola
     print_draft_summary(selected_map, phase, team, banned_brawlers, picks)
+    print("\nVersión 1.0.0")
 
     return {
         "draft_summary": draft_summary,

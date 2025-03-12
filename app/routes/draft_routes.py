@@ -21,7 +21,8 @@ Notas:
 - `maps` y `brawlers` no se cargan aquí, sino en `main.py` y se acceden desde `request.app.state`.
 - Maneja excepciones como `ValueError`, `FileNotFoundError` y `KeyError`, devolviendo respuestas HTTP adecuadas.
 """
-from fastapi import APIRouter, HTTPException, Request
+import os
+from fastapi import APIRouter, HTTPException, Request, Header
 from app.models.draft_model import DraftRequest
 from app.services.draft_service import execute_draft
 from app.services.gemini_service import call_gemini
@@ -29,7 +30,7 @@ from app.services.gemini_service import call_gemini
 router = APIRouter()
 
 @router.post("/draft")
-def handle_draft(request: Request, draft_request: DraftRequest):
+def handle_draft(request: Request, draft_request: DraftRequest, x_api_key: str = Header(None)):
     """
     Maneja el draft, genera el resumen y obtiene sugerencias de Gemini.
 
@@ -40,6 +41,10 @@ def handle_draft(request: Request, draft_request: DraftRequest):
     Retorna:
     - dict: JSON con el resumen del draft y la recomendación de Gemini.
     """
+
+    if x_api_key != os.getenv("BRAWLGPT_API_KEY"):
+        raise HTTPException(status_code=403, detail="Forbidden: Invalid API key")
+
     try:
         # Obtener `maps` y `brawlers` desde la aplicación
         maps = request.app.state.maps

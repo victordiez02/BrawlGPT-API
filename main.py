@@ -18,6 +18,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.routes.draft_routes import router as draft_router
 from app.utils.config import load_data, load_maps
+from contextlib import asynccontextmanager
 
 # Cargar los datos al iniciar la API (solo una vez)
 brawlers = load_data("data/meta/meta.txt", "data/meta/categories.txt", "data/meta/tier.txt")
@@ -25,6 +26,15 @@ maps = load_maps("data/meta/maps.txt", brawlers)
 
 # Inicializar la aplicación FastAPI
 app = FastAPI()
+
+@asynccontextmanager
+async def lifespan():
+    print("API Version: 1.0.0")  # Mensaje de versión al iniciar
+    yield
+    print("Shutting down...")  # Mensaje al cerrar la API (opcional)
+
+# Añadir el Lifespan Event a la aplicación
+app.state.lifespan = lifespan
 
 # Configuración de CORS para permitir solo el método GET
 app.add_middleware(

@@ -56,6 +56,9 @@ def parse_gemini_response(response_text):
 
         if match:
             brawlers = match.group(2).strip()  # Nombre del brawler
+            # Eliminar asteriscos del nombre de los brawlers
+            brawlers = brawlers.replace("**", "").strip()
+
             probability = int(match.group(3))  # Probabilidad
             explanationUSA = match.group(4).strip()  # Explicación en inglés
             explanationESP = match.group(5).strip()  # Explicación en español

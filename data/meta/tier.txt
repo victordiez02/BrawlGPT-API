@@ -1,5 +1,5 @@
 S: Juju | Gus | Frank | Stu | Surge | Max | Maisie | Lou | Penny | Ash | Byron | Rico | Gene | Angelo
-A: Piper | Berry | Griff | Gray | RT | Amber | Pearl | Collete | Eve | Nita | Darryl | Poco | Bell | Larry | Sandy | Melodie | Kenji | Buster | Barley | Tick | Kit
-B: Janet | Draco | Jesse | Cordelius | Otis | Mandy | Sprout | 8-Bit | Tara | Dynamike | Mortis | Crow | Nany | Colt | Carl | Lola | Brock | Gale | Bea | Emz | Squeak | Chester | Bibi | Lily
-C: Shade | Buzz | Rosa | Meg | Leon | Chuck | Ruffs | Willow | Moe | Clancy | Charlie | Edgar | Grom | Shelly | El Primo | Fang | Sam | Bo | Jacky | Bull | Meple | Hank
-D: Pam | Bonny | Miko | Mr P | Doug
+A: Piper | Berry | Griff | Gray | R-T | Amber | Pearl | Collete | Eve | Nita | Darryl | Poco | Belle | Larry | Sandy | Melodie | Kenji | Buster | Barley | Tick | Kit
+B: Janet | Draco | Jessie | Cordelius | Otis | Mandy | Sprout | 8-Bit | Tara | Dynamike | Mortis | Crow | Nani | Colt | Carl | Lola | Brock | Gale | Bea | Emz | Squeak | Chester | Bibi | Lily
+C: Shade | Buzz | Rosa | Meg | Leon | Chuck | Ruffs | Willow | Moe | Clancy | Charlie | Edgar | Grom | Shelly | El Primo | Fang | Sam | Bo | Jacky | Bull | Meeple | Hank
+D: Pam | Bonnie | Mico | Mr. P | Doug

@@ -1,8 +1,8 @@
 Antitank: Bea | Chester | Clancy | Collete | Cordelius | Crow | Emz | Gale | Griff | Lou | Maisie | Otis | Shelly | Spike | Surge
 Thrower: Barley | Berry | Dynamike | Grom | Juju | Larry | Sprout | Tick | Willow
 Wallbreaker: Brock | Colt | Gray | Griff | Piper | Ruffs
-Assasin: Shade | Kenji | Lily | Melodie | Miko | Cordelius | Sam | Fang | Buzz | Stu | Edgar | Leon | Crow | Mortis
+Assasin: Shade | Kenji | Lily | Melodie | Mico | Cordelius | Sam | Fang | Buzz | Stu | Edgar | Leon | Crow | Mortis
 Tank: Draco | Hank | Buster | Meg | Ash | Jacky | Rosa | Frank | Darryl | El Primo | Bull
 Healer: Byron | Berry | Poco | Pam | Doug | Kit | Gus
-Control: Amber | Bo | Charlie | Chuck | Emz | Gale | Gene | Griff | Jesse | Lou | Meple | Mr P | Otis | Penny | Sandy | Squeak | Willow
+Control: Amber | Bo | Charlie | Chuck | Emz | Gale | Gene | Griff | Jessie | Lou | Meeple | Mr. P | Otis | Penny | Sandy | Squeak | Willow
 Support: Berry | Byron | Doug | Gray | Gus | Kit | Max | Pam | Poco | Ruffs

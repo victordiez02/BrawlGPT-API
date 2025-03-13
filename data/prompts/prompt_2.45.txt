@@ -22,12 +22,12 @@ In this case, I am requesting a 4th & 5th pick decision (PHASE 3), so follow the
   - You are allowed to use the same brawler in multiple pairs, as long as the exact same combination of two brawlers is not repeated.
 
 • How to Respond to Me in a 4th & 5th Pick Situation:
-Return only the Top 5 Suggested Picks in the following exact format, ordered from Best to Worst, with an stimation of pick effectiveness and without any explanations or additional information:
-1. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
-2. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
-3. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
-4. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
-5. [Brawler Name 1] + [Brawler Name 2] - [Percentage]%
+Return only the Top 5 Suggested Picks in the following exact format, ordered from Best to Worst, with an estimation of pick effectiveness and with a brief explanation of each choice (less than 50 words) and its translation to Spanish, that can be understood by someone without prior knowledge of the given information as if you were an expert Brawl Stars analyst:
+[Brawler Name 1] + [Brawler Name 2] - [Percentage]% - [Explanation] - [Translation]
+[Brawler Name 1] + [Brawler Name 2] - [Percentage]% - [Explanation] - [Translation]
+[Brawler Name 1] + [Brawler Name 2] - [Percentage]% - [Explanation] - [Translation]
+[Brawler Name 1] + [Brawler Name 2] - [Percentage]% - [Explanation] - [Translation]
+[Brawler Name 1] + [Brawler Name 2] - [Percentage]% - [Explanation] - [Translation]
 Do not include any text outside of this numbered list.
 
 By following this structure, ensure that the 4th & 5th picks optimize counterplay while reinforcing the team’s strength for the final phase of the draft.

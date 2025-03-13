@@ -38,3 +38,6 @@ dist/
 htmlcov/
 *.pytest_cache/
 tests/__pycache__/
+
+# Ignorar zips, que es donde guardo versiones anteriores
+*.zip

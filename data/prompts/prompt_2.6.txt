@@ -27,12 +27,12 @@ In this case, I am requesting a last pick decision (PHASE 4), so follow these pr
   - If unsure, opt for a neutral pick (one that won’t struggle against multiple enemies).
 
 • How to Respond to Me in a Last Pick Situation:
-Return only the Top 5 Suggested Picks in the following exact format, ordered from Best to Worst, with an stimation of pick effectiveness and without any explanations or additional information:
-1. [Brawler Name] - [Percentage]%
-2. [Brawler Name] - [Percentage]%
-3. [Brawler Name] - [Percentage]%
-4. [Brawler Name] - [Percentage]%
-5. [Brawler Name] - [Percentage]%
+Return only the Top 5 Suggested Picks in the following exact format, ordered from Best to Worst, with an estimation of pick effectiveness and with a brief explanation of each choice (less than 50 words) and its translation to Spanish, that can be understood by someone without prior knowledge of the given information as if you were an expert Brawl Stars analyst:
+1. [Brawler Name] - [Percentage]% - [Explanation] - [Translation]
+2. [Brawler Name] - [Percentage]% - [Explanation] - [Translation]
+3. [Brawler Name] - [Percentage]% - [Explanation] - [Translation]
+4. [Brawler Name] - [Percentage]% - [Explanation] - [Translation]
+5. [Brawler Name] - [Percentage]% - [Explanation] - [Translation]
 Do not include any text outside of this numbered list.
 
 By following this structure, ensure that the last pick maximizes my team’s chances of winning by countering enemies, reinforcing synergy, and utilizing the strongest available options based on the tier list and map data.

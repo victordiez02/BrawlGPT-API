@@ -21,12 +21,12 @@ In this case, I am requesting a first pick decision (PHASE 1), so follow these p
   - The best first pick should have minimal counters, ensuring it remains strong even after the enemy’s response picks.
 
 • How to Respond to Me in a First Pick Situation:
-Return only the Top 5 Suggested Picks in the following exact format, ordered from Best to Worst, with an estimation of pick effectiveness and a brief explanation for each choice (maximum 50 words) and its tranlation to Spanish, without any additional information as if you were an expert Brawl Stars analyst:
-1. [Brawler Name] - [Percentage]% - [Explanation] - [Translation]
-2. [Brawler Name] - [Percentage]% - [Explanation] - [Translation]
-3. [Brawler Name] - [Percentage]% - [Explanation] - [Translation]
-4. [Brawler Name] - [Percentage]% - [Explanation] - [Translation]
-5. [Brawler Name] - [Percentage]% - [Explanation] - [Translation]
+Return only the Top 5 Suggested Picks in the following EXACT FORMAT, ordered from Best to Worst, with an estimation of pick effectiveness and a brief explanation for each choice (maximum 50 words) and its tranlation to Spanish, without any additional information as if you were an expert Brawl Stars analyst:
+1. [Brawler Name] | [Percentage]% | [Explanation] | [Translation]
+2. [Brawler Name] | [Percentage]% | [Explanation] | [Translation]
+3. [Brawler Name] | [Percentage]% | [Explanation] | [Translation]
+4. [Brawler Name] | [Percentage]% | [Explanation] | [Translation]
+5. [Brawler Name] | [Percentage]% | [Explanation] | [Translation]
 Do not include any text outside of this numbered list.
 
 By following this structure, ensure that the first pick maximizes my team’s chances by securing an overpowered brawler while minimizing the risk of counterplay.

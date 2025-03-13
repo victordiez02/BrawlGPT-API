@@ -31,6 +31,8 @@ def call_gemini(prompt):
 
     return parse_gemini_response(response.text) if response.text else "No response from Gemini."
 
+import re
+
 def parse_gemini_response(response_text):
     """
     Convierte la respuesta de Gemini en un JSON estructurado.
@@ -46,21 +48,19 @@ def parse_gemini_response(response_text):
 
     # Procesamos las líneas de la respuesta
     for line in lines:
-        # Regular expression to extract brawlers, probability, explanation (in both English and Spanish)
-        # Esto debería capturar el formato de la respuesta: 
-        # "[Brawler Name] - [Percentage]% - [Explanation] - [Translation]"
-        # o bien: "[Brawler Name 1] + [Brawler Name 2] - [Percentage]% - [Explanation] - [Translation]"
+        # Regular expression para capturar el brawler, porcentaje, explicación en inglés y explicación en español
+        # Este formato es el que ahora esperamos:
+        # "[Brawler Name] | [Percentage]% | [Explanation in English] | [Explanation in Spanish]"
         
-        match = re.match(r"(\d+\.)?\s*(.*?)\s*-\s*(\d+)%\s*-\s*(.*?)\s*-\s*\*(.*?)\*", line)
-        
+        match = re.match(r"(\d+\.)?\s*(.*?)\s*\|\s*(\d+)%\s*\|\s*(.*?)\s*\|\s*(.*)", line)
+
         if match:
-            brawlers = match.group(2).strip()  # Nombre del brawler o pareja de brawlers
+            brawlers = match.group(2).strip()  # Nombre del brawler
             probability = int(match.group(3))  # Probabilidad
             explanationUSA = match.group(4).strip()  # Explicación en inglés
             explanationESP = match.group(5).strip()  # Explicación en español
 
-            # Eliminar caracteres de negrita '**' en la explicación en inglés y español
-            brawlers = brawlers.replace("**", "").strip()
+            # Eliminar cualquier carácter extra que pueda haberse incluido (como asteriscos)
             explanationUSA = explanationUSA.replace("**", "").strip()
             explanationESP = explanationESP.replace("**", "").strip()
 

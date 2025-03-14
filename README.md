@@ -1,6 +1,11 @@
-# 📈 BrawlGPT Draft API
+# <img src="./images/iconoAPP.png" alt="BrawlGPT Icon" height="30" /> BrawlGPT Draft API
 
-Este proyecto trata de la creación de una API que dado un 🔶 **draft** en Brawl Stars, obtiene la mejor decisión posible utilizando 🔷 **Inteligencia Artificial**.<br>  
+<div align="center">
+  <img src="./images/Logo.png" alt="BrawlGPT Logo" height="300" />
+</div>
+
+Este proyecto trata de la creación de una API que dado un 🔶 **draft** en Brawl Stars, obtiene la mejor decisión posible utilizando 🔷 **Inteligencia Artificial**.
+
 Incluye la lógica de selección y baneo de brawlers, integración con 🔴 **Gemini AI** para recomendaciones y un sistema modular bien estructurado.<br>  
 La idea es usarla para llamarla en una pagina web, la cual también es de código abierto. Esta página recoge la información del draft del usuario de una forma cómoda y atracriva para después llamar a la API y recibir las respuestas de la IA para poder mostrarlas de nuevo en la página en unos pocos segundos. Puedes consultarla en mi perfil o en el botón siguiente.
 

@@ -174,19 +174,19 @@ def load_brawlers_from_file(file_path):
     return brawlers
 
 def get_team():
-    """Recoge el equipo que empieza eligiendo y el mapa seleccionado, con el diccionario de mapas."""
-    valid_teams = ['blue', 'red']  # Valid teams
+    """Recoge el equipo que empieza eligiendo."""
+    valid_teams = ['blue', 'red']  # Equipos válidos
 
     team_completed = False
     while not team_completed:
-        print(f"Which team starts picking? ({colored('Blue', 'blue')}/{colored('Red', 'red')}):")
-        team = input().strip().lower()  # Read input and convert to lowercase to normalize
-        if team in valid_teams:  # Check if the response is valid
+        print(f"Which team starts picking? (" + Text("Blue", style="bold blue") + "/" + Text("Red", style="bold red") + "):")
+        team = input().strip().lower()  # Leer entrada y normalizar
+        if team in valid_teams:  # Verificar si la respuesta es válida
             team_completed = True
             clean_console()
         else:
             clean_console()
-            print(f"Invalid team name. Please enter {colored('Blue', 'blue')} or {colored('Red', 'red')}.")
+            print(f"Invalid team name. Please enter " + Text("Blue", style="bold blue") + " or " + Text("Red", style="bold red") + ".")
     return team
 
 def get_map(maps_dict):

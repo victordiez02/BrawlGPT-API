@@ -233,11 +233,11 @@ def get_phase():
     """Obtiene la fase del draft, pidiendo un número del 1 al 4 con explicaciones claras."""
     phase_completed = False
     while not phase_completed:
-        print("Please enter the draft phase (1-4) based on your current stage:")
-        print("1: First phase - Choose the 1st pick. This is the first pick of the draft.")
-        print("2: Second phase - Choose the 2nd and 3rd picks. This is the second part of the draft.")
-        print("3: Third phase - Choose the 4th and 5th picks. This is the third part of the draft.")
-        print("4: Fourth phase - Choose the last pick. This is the final pick of the draft.")
+        print(f"Please enter the draft phase ({colored('1', 'cyan')}-{colored('4', 'cyan')}) based on your current stage:")
+        print(f"{colored('1', 'cyan')}: First phase - Choose the 1st pick. This is the first pick of the draft.")
+        print(f"{colored('2', 'cyan')}: Second phase - Choose the 2nd and 3rd picks. This is the second part of the draft.")
+        print(f"{colored('3', 'cyan')}: Third phase - Choose the 4th and 5th picks. This is the third part of the draft.")
+        print(f"{colored('4', 'cyan')}: Fourth phase - Choose the last pick. This is the final pick of the draft.")
 
         # Solicitar al usuario el número de la fase
         phase = input("Enter the phase number (1-4): ").strip()

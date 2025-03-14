@@ -1,0 +1,19 @@
+Last Stop:
+- Mode: Gem Grab
+- Has indestructive walls: No
+- 1st Pick: Janet | Penny | Gene | 8-Bit | Pearl | Amber
+- Last Pick: Melodie | Ash  | Squeak | Mortis | Darryl | Griff
+- Other Picks: Lola | Stu | Max | Juju | Lou | Gus | Otis | Buster | Piper | Leon | Tara | Angelo | Byron | Carl | Kenji | Kit | Bo | Belle
+- Mid: Penny | Gene | 8-Bit | Pearl | Amber
+- Lane: Janet | Lola | Stu | Max | Juju | Lou | Gus | Otis | Buster | Piper | Leon | Tara | Angelo | Byron | Carl | Kenji | Kit | Bo | Belle
+- Estrategy: The optimal brawler selections should prioritize vision gear utility, range advantage, and mid-lane control. The best choice for this map is Janet, as her vision gear allows her to dominate lanes by outranging many opponents. Her hypercharge charges extremely fast, giving her significant burst potential, especially against gem carriers, since she can pressure with aerial attacks and quickly eliminate threats. For mid-lane control, Penny is an excellent choice due to her range and splash damage, making her highly effective in controlling the map. Gene and 8-Bit are also strong picks in this role, as they scout efficiently with their projectiles and vision gear. Pearl and Amber are standard Gem Grab brawlers, excelling in sustained mid-lane fights. On long-range lanes, Lola is highly underrated, benefiting from vision gear to win most matchups. However, Penny and Amber can counter her effectively. Stu and Max require precise execution; Max, in particular, is punishing if not played optimally. Lou is viable both as a lane brawler and in mid, leveraging his reload speed and control abilities. Snipers like Piper remain viable as late picks, especially as counters to enemy gem carriers. However, they should be chosen strategically in later draft phases rather than as initial picks. For counterplay, Mortis, Darryl, and Squeak can be annoying but are not overpowered in this map. For the "Undermine" Gem Grab map, the best picks will vary, but the general principles of vision control, mid-lane dominance, and range advantage remain crucial for success.
+
+Sneaky Fields:
+- Mode: Bounty
+- Has indestructive walls: No
+- 1st Pick: Tara | Buzz | Bo | Gene | Sandy | Rosa
+- Last Pick: Grom | Primo | Mr. P | Bull | Otis | Collete
+- Other Picks: Doug | Lou | Shelly | Janet | Jacky | R-T | Frank | Surge | Gale | Chester | Nita | Amber | Griff | Emz | Rico | Kenji | Maisie
+- Mid: aaaa
+- Lane: bbbb
+- Estrategy: Los brawlers en fist pick tienen capacidad de ver en arbustos mediante gagdets o estelares. Aprovecha esto para identificar donde están los enemigos. Si hay muchos tanques, puede ser buena opción un antitanque, incluso alguno que pueda romper arbustos para evitar que se acerquen en este caso. En general hay dos estrategias, jugar con elementos que te den la visión o jugar a romper arbustos (por ejemplo con Amber) cuando hay brawlers que sin ellos no pueden hacer nada.

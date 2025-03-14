@@ -20,8 +20,8 @@ from app.routes.draft_routes import router as draft_router
 from app.utils.config import load_data, load_maps
 
 # Cargar los datos al iniciar la API (solo una vez)
-brawlers = load_data("data/meta/meta.txt", "data/meta/categories.txt", "data/meta/tier.txt")
-maps = load_maps("data/meta/maps.txt", brawlers)
+brawlers = load_data("data/meta/mar2025/meta.txt", "data/meta/mar2025/categories.txt", "data/meta/mar2025/tier.txt")
+maps = load_maps("data/meta/mar2025/maps.txt", brawlers)
 
 # Inicializar la aplicación FastAPI
 app = FastAPI()

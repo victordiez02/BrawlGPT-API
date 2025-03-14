@@ -9,6 +9,7 @@ import os
 import re
 import google.generativeai as genai
 from dotenv import load_dotenv
+from app.services.draft_service import print_json
 
 # Cargar variables de entorno
 load_dotenv()
@@ -27,9 +28,13 @@ def call_gemini(prompt):
     model = genai.GenerativeModel("gemini-2.0-flash")
     response = model.generate_content(prompt)
 
-    print(response.text)
+    # Parsea la respuesta generada por Gemini en un json.
+    parse_response = parse_gemini_response(response.text)
 
-    return parse_gemini_response(response.text) if response.text else "No response from Gemini."
+    # Imprime la respuesta generada por Gemini en la consola.
+    print_json(parse_response)
+
+    return parse_response if response.text else "No response from Gemini."
 
 import re
 

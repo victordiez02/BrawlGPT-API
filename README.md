@@ -1,10 +1,65 @@
 # 📈 BrawlGPT Draft API
 
-Este proyecto es una API en **FastAPI** que gestiona un **sistema de draft** para Brawl Stars.
-Incluye la lógica de selección y baneo de brawlers, integración con **Gemini AI** para recomendaciones y un sistema modular bien estructurado.
+Este proyecto trata de la creación de una API que dado un 🔶 **draft** en Brawl Stars, obtiene la mejor decisión posible utilizando 🔷 **Inteligencia Artificial**.<br>  
+Incluye la lógica de selección y baneo de brawlers, integración con 🔴 **Gemini AI** para recomendaciones y un sistema modular bien estructurado.<br>  
+La idea es usarla para llamarla en una pagina web, la cual también es de código abierto. Esta página recoge la información del draft del usuario de una forma cómoda y atracriva para después llamar a la API y recibir las respuestas de la IA para poder mostrarlas de nuevo en la página en unos pocos segundos. Puedes consultarla en mi perfil o en el botón siguiente.
+
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Brawl%20Draft%20Magic-blue?style=for-the-badge&logo=github)](https://github.com/victordiez02/brawl-draft-magic)
+
+La motivación de este proyecto es entender el funcionamiento de una API y su creación en Python. Esta es la primera que he creado, con ayuda de la librería 🟢 **FastAPI**.
 
 ---
 
+## 💡 **Ejemplo de petición a la API**
+👉 **Enviamos estos datos al endpoint `/draft`**
+```json
+{
+  "phase": 2,
+  "selected_map": "Hard Rock Mine",
+  "banned_brawlers": ["Spike", "Crow", "Rico"],
+  "team": "blue",
+  "picks": ["Brock"]
+}
+```
+Explicación de los datos enviados:
+- **phase**: Fase actual del draft (1-4), que indica en qué etapa se encuentra el proceso de selección de brawlers.
+- **selected_map**: El nombre del mapa seleccionado para la partida (por ejemplo, "Hard Rock Mine").
+- **banned_brawlers**: Lista de los brawlers baneados por el equipo hasta el momento. En este caso, "Spike", "Crow" y "Rico" son los brawlers baneados.
+- **team**: El equipo que realiza el draft ("blue" o "red"). En este caso, el equipo azul.
+- **picks**: Lista de los brawlers seleccionados por el equipo hasta el momento. En este caso, el equipo ha elegido a "Brock".
+
+Una vez que estos datos son enviados, se genera un prompt largo que ha sido configurado minuciosamente. Este prompt es procesado por Gemini AI, quien lo evalúa y genera las mejores recomendaciones de brawlers o parejas de brawlers, con su porcentaje de victoria esperada y explicación, tanto en inglés como en español. Las respuestas de Gemini se recogen, se parsean en un formato JSON estructurado y se devuelven a la aplicación para ser tratadas y mostradas.
+
+👉 **Respuesta esperada**
+```json
+{
+  "draft_summary": "Resumen detallado del draft...",
+  "gemini_response": {
+    "gemini_suggestions": [
+        {
+            "brawlers": ["Maisie", "Stu"],
+            "probability": 75,
+            "explanationUSA": "Stu's mobility and damage output are strong, and Max provides support with speed.",
+            "explanationESP": "La movilidad y el daño de Stu son fuertes, y Max proporciona soporte con velocidad."
+        },
+        {
+            "brawlers": ["Maisie", "Rico"],
+            "probability": 70,
+            "explanationUSA": "Good synergy between Maisie and Rico, offering both control and high damage.",
+            "explanationESP": "Buena sinergia entre Maisie y Rico, ofreciendo tanto control como alto daño."
+        }
+    ]
+  }
+}
+```
+
+Explicación de los datos recibidos:
+- brawlers: Los brawlers sugeridos o la pareja de brawlers recomendada.
+- probability: La probabilidad en porcentaje de éxito de la recomendación, basado en las sinergias y características de los brawlers.
+- explanationUSA: Explicación en inglés de por qué se recomienda esta elección.
+- explanationESP: Explicación en español de por qué se recomienda esta elección.
+
+---
 ## 📁 **Estructura del Proyecto**
 El código está distribuido en varios módulos para facilitar la **organización** y **mantenimiento**.
 
@@ -82,43 +137,6 @@ El código está distribuido en varios módulos para facilitar la **organizació
 - Carga los datos de `brawlers` y `maps`.
 - Almacena los datos en `app.state` para usarlos en todas las rutas.
 - Registra las rutas con `app.include_router(draft_router)`.
-
----
-
-## 💡 **Ejemplo de Petición a la API**
-👉 **Enviando datos al endpoint `/draft`**
-```json
-{
-  "phase": 2,
-  "selected_map": "Hard Rock Mine",
-  "banned_brawlers": ["Spike", "Crow", "Rico"],
-  "team": "blue",
-  "picks": ["Brock"]
-}
-```
-
-👉 **Respuesta esperada**
-```json
-{
-  "draft_summary": "Resumen detallado del draft...",
-  "gemini_response": {
-    "gemini_suggestions": [
-        {
-            "brawlers": ["Maisie", "Stu"],
-            "probability": 75,
-            "explanationUSA": "Stu's mobility and damage output are strong, and Max provides support with speed.",
-            "explanationESP": "La movilidad y el daño de Stu son fuertes, y Max proporciona soporte con velocidad."
-        },
-        {
-            "brawlers": ["Maisie", "Rico"],
-            "probability": 70,
-            "explanationUSA": "Good synergy between Maisie and Rico, offering both control and high damage.",
-            "explanationESP": "Buena sinergia entre Maisie y Rico, ofreciendo tanto control como alto daño."
-        }
-    ]
-  }
-}
-```
 
 ---
 

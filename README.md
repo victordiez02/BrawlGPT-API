@@ -1,4 +1,4 @@
-# <img src="./images/iconoAPP.png" alt="BrawlGPT Icon" height="30" /> BrawlGPT Draft API
+# <img src="./images/IconoApp.png" alt="BrawlGPT Icon" height="30" /> BrawlGPT Draft API
 
 <div align="center">
   <img src="./images/Logo.png" alt="BrawlGPT Logo" height="300" />

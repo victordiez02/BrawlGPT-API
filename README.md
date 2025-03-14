@@ -105,11 +105,15 @@ El código está distribuido en varios módulos para facilitar la **organizació
     "gemini_suggestions": [
         {
             "brawlers": ["Maisie", "Stu"],
-            "probability": 75
+            "probability": 75,
+            "explanationUSA": "Stu's mobility and damage output are strong, and Max provides support with speed.",
+            "explanationESP": "La movilidad y el daño de Stu son fuertes, y Max proporciona soporte con velocidad."
         },
         {
             "brawlers": ["Maisie", "Rico"],
-            "probability": 70
+            "probability": 70,
+            "explanationUSA": "Good synergy between Maisie and Rico, offering both control and high damage.",
+            "explanationESP": "Buena sinergia entre Maisie y Rico, ofreciendo tanto control como alto daño."
         }
     ]
   }
@@ -123,17 +127,47 @@ El código está distribuido en varios módulos para facilitar la **organizació
 🔹 Fácil de **buscar funciones** gracias a este README.  
 🔹 **Listo para producción** con FastAPI y Gemini AI.  
 
-🚀 **¡Ahora puedes trabajar con tu API de forma organizada y eficiente!** 🎯
 
-## Notas Adicionales
+## 🚀 **Guía para ejecutar la API en local**
 
-**Para abrir enviroment:**  
+### 1. **Instalar las dependencias**:
 
-brawlGPT-env\Scripts\activate.bat
+Primero, asegúrate de tener un entorno virtual creado. Si no lo has hecho aún, puedes crear uno ejecutando el siguiente comando desde la raíz de tu proyecto:
 
-**Para abrir servidor local:**  
+```bash
+python -m venv brawlGPT-env
+```
 
+Después, activa el entorno virtual:
+
+- **Windows**:
+    ```bash
+    brawlGPT-env\Scripts\activate.bat
+    ```
+
+- **Unix (Linux/macOS)**:
+    ```bash
+    source brawlGPT-env/bin/activate
+    ```
+
+Una vez dentro del entorno virtual, instala las dependencias necesarias ejecutando el siguiente comando:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. **Iniciar el servidor local**:
+
+Una vez que el entorno virtual esté activado y las dependencias estén instaladas, ejecuta el siguiente comando para iniciar el servidor local utilizando **Uvicorn**:
+
+```bash
 uvicorn main:app --reload
+```
+
+Esto iniciará el servidor local y podrás acceder a la API en la dirección que se te indique en la consola.
+
+> **💡 TIP:**
+> FastAPI genera automáticamente una documentación interactiva para tu API que puedes usar para probarla de forma sencilla, añadiendo "\docs" a tu dirección.
 
 **TEMPORADA 35**
 

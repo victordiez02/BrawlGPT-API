@@ -24,7 +24,8 @@ Notas:
 import os
 from fastapi import APIRouter, HTTPException, Request, Header
 from app.models.draft_model import DraftRequest
-from app.services.draft_service import execute_draft
+from app.services.draft_service import print_draft_summary
+from app.utils.config import generate_final_prompt
 from app.services.gemini_service import call_gemini
 
 router = APIRouter()
@@ -56,7 +57,7 @@ def handle_draft(request: Request, draft_request: DraftRequest, x_api_key: str =
         brawlers = request.app.state.brawlers
 
         # Ejecutar la lógica del draft
-        draft_data = execute_draft(
+        draft_prompt = generate_final_prompt(
             draft_request.phase,
             draft_request.selected_map,
             maps,
@@ -66,8 +67,11 @@ def handle_draft(request: Request, draft_request: DraftRequest, x_api_key: str =
             draft_request.picks
         )
 
+        # Imprimir el resumen en consola
+        print_draft_summary(draft_request.selected_map, draft_request.phase, draft_request.team, draft_request.banned_brawlers, draft_request.picks)
+
         # Obtener respuesta de Gemini
-        gemini_response = call_gemini(draft_data["prompt"])
+        gemini_response = call_gemini(draft_prompt)
 
         # Devolver el resultado en formato JSON
         return {

@@ -72,6 +72,10 @@ def parse_gemini_response(response_text):
             explanationUSA = explanationUSA.replace("**", "").strip()
             explanationESP = explanationESP.replace("**", "").strip()
 
+            # Manejo del caso en el que el brawler y la probabilidad se repiten antes de la explicación en español
+            duplicate_pattern = rf"^\s*{re.escape(brawlers)}\s*\|\s*{probability}%\s*\|"
+            explanationESP = re.sub(duplicate_pattern, "", explanationESP).strip()
+
             # Añadir la sugerencia al listado
             suggestions.append({
                 "brawlers": brawlers,

@@ -15,6 +15,7 @@ Funciones:
 - get_phase(): Obtiene la fase del draft actual.
 - complete(text, state): Autocompleta nombres de brawlers.
 - get_draft_summary(phase, team, banned_brawlers, picks, brawlers): Genera un resumen del draft para la IA.
+- get_categories_summary(brawlers, banned_brawlers): Genera un resumen de las categorías de brawlers en formato de lista con comas, excluyendo los brawlers baneados.
 - generate_final_prompt(phase, selected_map, maps, brawlers, banned_brawlers, team, picks, "prompts", "final_prompt"): Genera un archivo final con el prompt completo para la IA.
 """
 import os
@@ -45,33 +46,29 @@ def load_brawlers(archive):
 
     return brawlers
 
-# Paso 2: Crear los conjuntos de tipos de brawlers desde categories.txt
+# Paso 2: Crear los conjuntos de tipos de brawlers desde categories.txt, y después asignamos las categorías
 def load_categories(archive, brawlers):
-    """Función para cargar las categorías."""
+    """Carga las categorías desde el archivo especificado, las asigna a los brawlers existentes y devuelve un diccionario de categorías."""
     categories = {}
 
-    with open(archive, 'r', encoding='utf-8') as file:
-        for line in file:
-            # Limpiar la línea y separar la categoría de los brawlers
-            line = line.strip()
-            if not line:  # Saltar líneas vacías
-                continue
-
-            category, brawlers_list = line.split(":")
-            category = category.strip()
-            brawlers_list = [b.strip() for b in brawlers_list.split("|")]
-
-            # Inicializar la categoría si no existe
-            if category not in categories:
-                categories[category] = []
-
-            # Agregar solo los nombres de los brawlers si existen en el diccionario brawlers
-            for brawler_name in brawlers_list:
-                if brawler_name in brawlers:
-                    categories[category].append(brawler_name)
-
+    if os.path.exists(archive):
+        with open(archive, 'r', encoding='utf-8') as file:
+            for line in file:
+                if ":" in line:
+                    category, brawler_list = line.strip().split(":")
+                    category = category.strip()
+                    brawlers_list = [b.strip() for b in brawler_list.split("|")]
+                    
+                    # Guardar la categoría en el diccionario
+                    categories[category] = []
+                    
+                    # Asignar categoría a los brawlers existentes
+                    for brawler_name in brawlers_list:
+                        if brawler_name in brawlers:
+                            brawlers[brawler_name].set_category(category)
+                            categories[category].append(brawler_name)
+    
     return categories
-
 
 # Paso 3: Asignar los counters desde meta.txt, incluyendo los tipos de brawlers
 def assign_counters(archive, brawlers, categories):
@@ -120,7 +117,7 @@ def load_data(meta, categories, tier):
     # Cargar los brawlers desde meta.txt
     brawlers = load_brawlers(meta)
 
-    # Cargar los tipos desde categories.txt
+    # Asignamos las categorías desde categories.txt y además creamos un diccionario que usaremos para asignar counters
     categories_list = load_categories(categories, brawlers)
 
     # Asignar los counters
@@ -281,10 +278,10 @@ def get_draft_summary(phase, team, banned_brawlers, picks, brawlers):
 
     # Explicación del turno actual para la IA
     turn_explanation = {
-        1: f"{next_turn} Team (my team) is choosing the First Pick, so make the optimal prediction.",
-        2: f"{next_turn} Team (my team) is choosing the 2nd and 3rd Picks, so make the optimal prediction.",
-        3: f"{next_turn} Team (my team) is choosing the 4th and 5th Picks, so make the optimal prediction.",
-        4: f"{next_turn} Team (my team) is choosing the Last Pick, so make the optimal prediction."
+        1: f"{next_turn} Team is choosing the First Pick, so make the optimal prediction.",
+        2: f"{next_turn} Team is choosing the 2nd and 3rd Picks, so make the optimal prediction.",
+        3: f"{next_turn} Team is choosing the 4th and 5th Picks, so make the optimal prediction.",
+        4: f"{next_turn} Team is choosing the Last Pick, so make the optimal prediction."
     }
 
     summary.append(f"NEXT TURN: {turn_explanation[phase]}")
@@ -302,8 +299,8 @@ def get_draft_summary(phase, team, banned_brawlers, picks, brawlers):
         second_pick_team_picks = [picks[0] if len(picks) > 0 else "---", picks[3] if len(picks) > 3 else "---", picks[4] if len(picks) > 4 else "---"]
 
     # Etiquetas para mayor claridad en la IA
-    enemy_team_label = f" {first_pick_team.upper()} TEAM (ENEMIES):"
-    my_team_label = f" {second_pick_team.upper()} TEAM (MY TEAM):"
+    enemy_team_label = f"{first_pick_team.upper()} TEAM:"
+    my_team_label = f"{second_pick_team.upper()} TEAM:"
 
     # Modificar los picks según la fase
     if phase == 1:
@@ -322,17 +319,26 @@ def get_draft_summary(phase, team, banned_brawlers, picks, brawlers):
         first_pick_team_picks = [picks[0] if len(picks) > 0 else "---", picks[3] if len(picks) > 3 else "---", picks[4] if len(picks) > 4 else "---"]
         second_pick_team_picks = [picks[1] if len(picks) > 1 else "---", picks[2] if len(picks) > 2 else "---", "(Pick here)"]
 
-    # Construcción del resumen
+    # Construcción del resumen    
+    first_pick_team_order = [1, 4, 5]  # Turnos del equipo que empezó
+    second_pick_team_order = [2, 3, 6]  # Turnos del otro equipo
+    
     summary.append(f"\n{enemy_team_label}")
-    for pick in first_pick_team_picks:
-        summary.append(f"- {pick}")
-
+    for i, pick in enumerate(first_pick_team_picks):
+        pick_number = first_pick_team_order[i]  # Siempre mostrar el número
+        summary.append(f"{pick_number}. {pick}")
+    
     summary.append(f"\n{my_team_label}")
-    for pick in second_pick_team_picks:
-        summary.append(f"- {pick}")
+    for i, pick in enumerate(second_pick_team_picks):
+        pick_number = second_pick_team_order[i]  # Siempre mostrar el número
+        summary.append(f"{pick_number}. {pick}")
 
     # Decir los counters de los brawlers enemigos
     if picks:
+
+        # Filtrar brawlers eliminando los baneados
+        available_brawlers = {name: b for name, b in brawlers.items() if name not in banned_brawlers}
+
         summary.append("\nCOUNTERS OF ENEMY BRAWLERS (consider this when picking):")
         enemy_picks = []
         if phase == 2:
@@ -344,19 +350,38 @@ def get_draft_summary(phase, team, banned_brawlers, picks, brawlers):
 
         for pick in enemy_picks:
             if pick in brawlers:
-                counters_str = ", ".join([counter.name for counter in brawlers[pick].counters])
+                counters_str = ", ".join([counter.name for counter in brawlers[pick].counters if counter.name not in banned_brawlers])
                 summary.append(f"{pick} is countered by {counters_str}.")
             else:
                 summary.append(f"No counters found for {pick}.")
 
-        # Filtrar brawlers eliminando los baneados
-        available_brawlers = {name: b for name, b in brawlers.items() if name not in banned_brawlers}
         # Añadir información de los brawlers disponibles
         selection_word = "selection" if phase in [1, 4] else "selections"
         summary.append(f"\nAvailable Brawlers (Your {selection_word} must be from this list, with their tier in parentheses):")
         summary.append(", ".join([f"{brawler.name} ({brawler.tier})" for brawler in available_brawlers.values()]))
 
     return "\n".join(summary)
+
+def get_categories_summary(brawlers, banned_brawlers):
+    """Genera un resumen de las categorías de brawlers en formato de lista con comas, excluyendo los brawlers baneados."""
+    categories = {}
+
+    # Agrupar brawlers por su categoría, excluyendo los baneados
+    for brawler in brawlers.values():
+        if brawler.category and brawler.name not in banned_brawlers:  # Solo incluir si el brawler tiene categoría y no está baneado
+            if brawler.category not in categories:
+                categories[brawler.category] = []
+            categories[brawler.category].append(brawler.name)
+
+    if not categories:
+        return ""
+
+    summary = "Brawler Categories Information (This may be useful for strategic decisions):\n"
+    
+    for category, brawler_list in categories.items():
+        summary += f"{category}: {', '.join(brawler_list)}.\n"
+
+    return summary
 
 def generate_final_prompt(phase, selected_map, maps, brawlers, banned_brawlers, team, picks, prompts_path="data/prompts", output_folder="final_prompt"):
     """
@@ -423,6 +448,9 @@ def generate_final_prompt(phase, selected_map, maps, brawlers, banned_brawlers, 
 
     # Añadir el resumen del draft al archivo final
     final_content += draft_summary_text + "\n\n"
+
+    # Añadir resumen de categorías
+    final_content += get_categories_summary(brawlers, banned_brawlers) + "\n"
 
     # Añadir información del mapa seleccionado
     if selected_map in maps:

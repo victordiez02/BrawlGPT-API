@@ -10,14 +10,13 @@ Funciones:
 - draft(phase, team, brawlers): Ejecuta el draft hasta la fase indicada.
 - print_draft_summary(selected_map, phase, team, banned_brawlers, picks): Imprime el resumen del draft en formato tabular.
 - print_json(gemini_response): Imprime la respuesta de Gemini de manera formateada y legible en la consola.
-- execute_draft(phase, selected_map, maps, brawlers, banned_brawlers, team, picks): Ejecuta el proceso del draft, genera el resumen y el prompt para la IA.
 """
 
 from rich import print
 from rich.console import Console
 from rich.table import Table
 from rich.text import Text
-from app.utils.config import clean_console, get_draft_summary, generate_final_prompt
+from app.utils.config import clean_console
 
 
 def ban_phase(team, brawlers):
@@ -310,39 +309,3 @@ def print_json(gemini_response):
         )
 
     console.print(table)
-
-
-def execute_draft(phase, selected_map, maps, brawlers, banned_brawlers, team, picks):
-    """
-    Ejecuta el proceso del draft y genera los datos necesarios.
-
-    Parámetros:
-    - phase (int): Número de la fase actual del draft.
-    - selected_map (str): Nombre del mapa seleccionado.
-    - maps (dict): Diccionario con los datos de los mapas.
-    - brawlers (dict): Diccionario con los datos de los brawlers.
-    - banned_brawlers (list): Lista de brawlers que han sido baneados.
-    - team (str): Equipo que está eligiendo en esta fase.
-    - picks (list): Lista de brawlers seleccionados hasta el momento.
-
-    Retorna:
-    - dict: Un diccionario con:
-        - "draft_summary": Resumen del draft en texto.
-        - "prompt": Prompt generado para la IA.
-    """
-    # Generar el resumen del draft
-    draft_summary = get_draft_summary(phase, team, banned_brawlers, picks, brawlers)
-
-    # Generar el prompt para la IA
-    prompt = generate_final_prompt(
-        phase, selected_map, maps, brawlers, banned_brawlers, team, picks
-    )
-
-    # Imprimir el resumen en consola
-    print_draft_summary(selected_map, phase, team, banned_brawlers, picks)
-    # print("\nVersión 1.0.1")
-
-    return {
-        "draft_summary": draft_summary,
-        "prompt": prompt
-    }

@@ -2,27 +2,32 @@
 """
 Este módulo define las clases Brawler y Map para modelar estrategias en Brawl Stars.
 """
+
+# Definimos la clase Brawler
 class Brawler:
-    """Clase que representa un brawler y sus características, como counters y tier."""
-    def __init__(self, name):
+    """Clase que representa un brawler y sus características, como counters, tier y categoría."""
+    def __init__(self, name, category=""):
         self.name = name
-        self.counters = []  # Vector que contendrá los brawlers que counterea
+        self.counters = []  # Lista de brawlers que counterea
         self.tier = None    # Tier del brawler: S, A, B, C, D
+        self.category = category  # Categoría del brawler (puede estar vacía si no tiene)
 
     def add_counter(self, brawler):
         """Agrega un brawler a la lista de counters de este brawler."""
         self.counters.append(brawler)
 
+    def set_category(self, category):
+        """Asigna una categoría al brawler."""
+        self.category = category
+
     def __str__(self):
         """Devuelve una representación en cadena del brawler."""
-        # Unir los nombres de los counters con una coma y espacio
         return (
             f"Brawler: {self.name}\n"
             f"  - Countered by: {', '.join([counter.name for counter in self.counters])}\n"
             f"  - Tier: {self.tier}\n"
+            f"  - Category: {self.category}\n"
         )
-
-
 
 # Definimos la clase Mapa
 class Map:

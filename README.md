@@ -205,3 +205,22 @@ La información de mejores picks por mapa se han sacado de este video:
 
 La información de como draftear se ha sacado de este video:  
 <https://www.youtube.com/watch?v=YzfE6-v_5a8>
+
+**TEMPORADA 36**
+
+La información de mejores picks por mapa se han sacado de este video de SpenLC:  
+<https://youtu.be/kkncne0NAOA?si=89ZSruK3Wid-8LMr>
+
+Los tiers se han sacado de esta publicación de AshBS:  
+<https://www.instagram.com/p/DGvuD3BPR4g/>
+
+---
+
+Desarrollado **Víctor Díez**
+
+<div align="center">
+  <p><strong>⚠️ Aviso importante</strong></p>
+  <p>Este proyecto no está afiliado, respaldado ni patrocinado por Supercell.</p>
+  <p>Brawl Stars y sus activos son propiedad de Supercell.</p>
+  <p>Para más información, consulta la <a href="https://supercell.com/en/fan-content-policy/">Política de Contenidos de Supercell</a>.</p>
+</div>

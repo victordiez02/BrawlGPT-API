@@ -24,23 +24,23 @@ maps = load_maps("data/meta/mar2025/maps.txt", brawlers)  # Dict[str, Map]
 
 # Solicita al usuario que seleccione un mapa de la lista de mapas disponibles.
 # Devuelve un objeto de la clase `Map` correspondiente al mapa elegido.
-selected_map = 'Hard Rock Mine'  # Map
+selected_map = 'Dueling Beetles'  # Map
 
 # Determina la fase actual del draft.
 # Devuelve un entero que indica la fase (1 a 4).
-phase = 1
+phase = 4
 
 # Determina qué equipo comienza el draft (azul o rojo).
 # Devuelve una cadena con el nombre del equipo: "blue" o "red".
-team = 'blue'  # str
+team = 'red'  # str
 
 
 # Realiza el proceso de draft en función de la fase y el equipo actual.
 # Devuelve dos listas:
 # - `banned_brawlers`: Lista de strings con los nombres de los brawlers baneados.
 # - `picks`: Lista de strings con los nombres de los brawlers seleccionados en el draft.
-banned_brawlers = ["Angelo", "Penny", "Hank"]
-picks = []
+banned_brawlers = ['Hank', 'Penny', 'Sandy', 'Cordelius', 'Juju']
+picks = ['Bea', 'Frank', 'Ollie', 'Griff', 'Barley']
 
 # Ejecutar el proceso de draft usando generate_final_prompt
 # Devuelve el prompt generado para la IA.

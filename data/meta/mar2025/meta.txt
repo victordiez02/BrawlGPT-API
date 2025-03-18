@@ -13,7 +13,7 @@ Brock: Max | Nani | Piper | Mandy | Finx
 Bull: Nita | Antitank | Hank
 Buster: Rosa | Darryl | Jacky | Buzz | El Primo
 Buzz: Surge | Gale | Jacky | Ollie | Finx
-Byron: Piper | Nani | Mandy | Sprout | Clancy | Lou| Mr. P
+Byron: Piper | Nani | Mandy | Sprout | Clancy | Lou | Mr. P
 Carl: Buzz | Surge | Darryl | Jacky | Gene
 Charlie: Penny | Larry | Juju
 Chester: Janet | Amber | Stu | Gale
@@ -54,7 +54,7 @@ Lou: Belle | Bea | Bo | Poco | Thrower
 Maisie: Barley | Stu | Belle | Penny
 Mandy: Nani | Tick | Mortis | Thrower
 Max: Crow | Gus | Pam | Stu | Finx
-Meeple: Kenji | Frank | Ash| Mr. P
+Meeple: Kenji | Frank | Ash | Mr. P
 Meg: Collete | Lou | Lola | Bea
 Melodie: Clancy | Cordelius | Buzz
 Mico: R-T | Bull | Stu

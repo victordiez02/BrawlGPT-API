@@ -345,7 +345,7 @@ def get_draft_summary(phase, team, banned_brawlers, picks, brawlers):
 
         for pick in enemy_picks:
             if pick in brawlers:
-                counters_str = ", ".join([counter.name for counter in brawlers[pick].counters if counter.name not in banned_brawlers])
+                counters_str = ", ".join([counter.name for counter in brawlers[pick].counters if counter.name not in banned_brawlers and counter.name not in enemy_picks])
                 summary.append(f"{pick} is countered by {counters_str}.")
             else:
                 summary.append(f"No counters found for {pick}.")
@@ -353,7 +353,7 @@ def get_draft_summary(phase, team, banned_brawlers, picks, brawlers):
     # Añadir información de los brawlers disponibles
     selection_word = "selection" if phase in [1, 4] else "selections"
     summary.append(f"\nAvailable Brawlers (Your {selection_word} must be from this list, with their tier in parentheses):")
-    summary.append(", ".join([f"{brawler.name} ({brawler.tier})" for name, brawler in brawlers.items() if name not in banned_brawlers]) + ".")
+    summary.append(", ".join([f"{brawler.name} ({brawler.tier})" for name, brawler in brawlers.items() if name not in banned_brawlers and name not in picks]) + ".")
 
     return "\n".join(summary)
 
@@ -455,8 +455,8 @@ def generate_final_prompt(phase, selected_map, maps, brawlers, banned_brawlers, 
         raise ValueError(f"The selected map '{selected_map}' is not found in the 'maps' dictionary.")
 
     # Guardar el archivo final
-    with open(final_prompt_path, "w", encoding="utf-8") as final_file:
-        final_file.write(final_content)
+    #with open(final_prompt_path, "w", encoding="utf-8") as final_file:
+    #    final_file.write(final_content)
 
     print(f"Final prompt file created at: {final_prompt_path}")
 

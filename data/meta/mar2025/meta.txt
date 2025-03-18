@@ -60,7 +60,7 @@ Melodie: Clancy | Cordelius | Buzz
 Mico: R-T | Bull | Stu
 Moe: Penny | Darryl | Larry
 Mortis: Jacky | Shade | Bull | Gale | Shelly | Ollie | Finx
-Mr. P: Edgar | Mortis | Bibi | Ollie
+Mr. P: Edgar | Mortis | Bibi | Ollie | Penny
 Nani: Gene | Max | Darryl | Tick
 Nita: Larry | Barley | Juju | Willow | Spike | Griff
 Otis: Barley | Juju | Larry | Stu | Amber

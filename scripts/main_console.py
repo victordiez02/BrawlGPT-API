@@ -8,10 +8,10 @@ import os
 # Obtener la ruta del directorio raíz del proyecto
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from google import genai
-from app.utils.config import load_data, load_maps, get_team, get_map, get_phase, clean_console
-from app.services.draft_service import draft, execute_draft
+from app.utils.config import load_data, load_maps, get_team, get_map, get_phase, clean_console, generate_final_prompt
+from app.services.draft_service import draft
 from app.services.gemini_service import call_gemini
+from app.services.draft_service import print_draft_summary
 
 clean_console()
 
@@ -42,15 +42,14 @@ team = get_team()  # str
 # - `picks`: Lista de strings con los nombres de los brawlers seleccionados en el draft.
 [banned_brawlers, picks] = draft(phase, team, brawlers)  # List[str], List[str]
 
-# Ejecutar el proceso de draft usando execute_draft
-# Devuelve un diccionario con el resumen del draft y el prompt generado para la IA.
-draft_data = execute_draft(phase, selected_map, maps, brawlers, banned_brawlers, team, picks)
+# Ejecutar el proceso de draft usando generate_final_prompt
+# Devuelve el archivo final con toda la información del draft generado para la IA.
+prompt = generate_final_prompt(phase, selected_map, maps, brawlers, banned_brawlers, team, picks)
 
-# Genera el archivo final con toda la información del draft.
-# No devuelve nada, sino que guarda el archivo en la carpeta `final_prompt/`.
-prompt = draft_data["prompt"]
+# Imprimir resumen del draft
+print_draft_summary(phase, team, banned_brawlers, picks, brawlers)
 
 # Obtener respuesta de Gemini
 # Llama a `call_gemini()` que envía el prompt a la IA y recibe una respuesta con las mejores opciones, imprimiendola por pantalla.
-gemini_response = call_gemini(draft_data["prompt"])
+gemini_response = call_gemini(prompt)
 

@@ -21,7 +21,6 @@ Funciones:
 import os
 from termcolor import colored
 from app.models.classes import Brawler, Map
-#from app.services.draft_service import get_draft_summary
 
 # Función para limpiar la consola
 def clean_console():
@@ -265,8 +264,8 @@ def get_draft_summary(phase, team, banned_brawlers, picks, brawlers):
     first_pick_team = "Blue" if team == "blue" else "Red"
     second_pick_team = "Red" if team == "blue" else "Blue"
 
-    summary.append(f"First Pick Team: {first_pick_team}")
-    summary.append(f"Second Pick Team: {second_pick_team}")
+    summary.append(f"First Pick Team: {first_pick_team}.")
+    summary.append(f"Second Pick Team: {second_pick_team}.")
 
     summary.append(f"\nPhase {phase}")
 
@@ -287,7 +286,7 @@ def get_draft_summary(phase, team, banned_brawlers, picks, brawlers):
     summary.append(f"NEXT TURN: {turn_explanation[phase]}")
 
     # Añadir brawlers baneados
-    summary.append("Banned Brawlers: " + (", ".join(banned_brawlers) if banned_brawlers else "None"))
+    summary.append("Banned Brawlers: " + (", ".join(banned_brawlers) if banned_brawlers else "None") + ".")
 
     # Determinar los picks de cada equipo según quién comenzó
     # Determinar los picks de cada equipo según quién comenzó
@@ -335,10 +334,6 @@ def get_draft_summary(phase, team, banned_brawlers, picks, brawlers):
 
     # Decir los counters de los brawlers enemigos
     if picks:
-
-        # Filtrar brawlers eliminando los baneados
-        available_brawlers = {name: b for name, b in brawlers.items() if name not in banned_brawlers}
-
         summary.append("\nCOUNTERS OF ENEMY BRAWLERS (consider this when picking):")
         enemy_picks = []
         if phase == 2:
@@ -355,10 +350,10 @@ def get_draft_summary(phase, team, banned_brawlers, picks, brawlers):
             else:
                 summary.append(f"No counters found for {pick}.")
 
-        # Añadir información de los brawlers disponibles
-        selection_word = "selection" if phase in [1, 4] else "selections"
-        summary.append(f"\nAvailable Brawlers (Your {selection_word} must be from this list, with their tier in parentheses):")
-        summary.append(", ".join([f"{brawler.name} ({brawler.tier})" for brawler in available_brawlers.values()]))
+    # Añadir información de los brawlers disponibles
+    selection_word = "selection" if phase in [1, 4] else "selections"
+    summary.append(f"\nAvailable Brawlers (Your {selection_word} must be from this list, with their tier in parentheses):")
+    summary.append(", ".join([f"{brawler.name} ({brawler.tier})" for name, brawler in brawlers.items() if name not in banned_brawlers]) + ".")
 
     return "\n".join(summary)
 
@@ -379,7 +374,7 @@ def get_categories_summary(brawlers, banned_brawlers):
     summary = "Brawler Categories Information (This may be useful for strategic decisions):\n"
     
     for category, brawler_list in categories.items():
-        summary += f"{category}: {', '.join(brawler_list)}.\n"
+        summary += f"  -{category}: {', '.join(brawler_list)}.\n"
 
     return summary
 
@@ -460,8 +455,8 @@ def generate_final_prompt(phase, selected_map, maps, brawlers, banned_brawlers, 
         raise ValueError(f"The selected map '{selected_map}' is not found in the 'maps' dictionary.")
 
     # Guardar el archivo final
-    #with open(final_prompt_path, "w", encoding="utf-8") as final_file:
-    #    final_file.write(final_content)
+    with open(final_prompt_path, "w", encoding="utf-8") as final_file:
+        final_file.write(final_content)
 
     print(f"Final prompt file created at: {final_prompt_path}")
 

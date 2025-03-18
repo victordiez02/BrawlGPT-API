@@ -57,12 +57,12 @@ class Map:
 
         # Crear la cadena para mostrar
         return (
-            f"Map: {self.name}\n"
-            f"  - Mode: {self.mode}\n"
-            f"  - Has indestructible walls: {walls_text}\n"
-            f"  - Recommended picks for phase 1: {first_pick_text}\n"
-            f"  - Recommended picks for phases 2 and 3: {other_picks_text}\n"
-            f"  - Recommended picks for phase 4: {last_pick_text}\n"
+            f"Map: {self.name}.\n"
+            f"  - Mode: {self.mode}.\n"
+            f"  - Has indestructible walls: {walls_text}.\n"
+            f"  - Recommended picks for phase 1: {first_pick_text}.\n"
+            f"  - Recommended picks for phases 2 and 3: {other_picks_text}.\n"
+            f"  - Recommended picks for phase 4: {last_pick_text}.\n"
             #f"  - Mid: {self.mid}\n"
             #f"  - Lane: {self.lane}\n"
             f"  - Estrategy: {self.strategy}"

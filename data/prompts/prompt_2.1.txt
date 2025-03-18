@@ -13,8 +13,7 @@ In this case, I am requesting a first pick decision (PHASE 1), so follow these p
     - Examples of bad first picks:
       - Throwers (e.g., Dynamike) → Can be countered by assassins.
       - Tanks (unless they are broken) → Can be countered by tank busters.
-  - If no strong first pick is available, consider banning it:
-    - If the best brawler is unavailable to me (e.g., I don’t have it unlocked or upgraded), it’s better to ban it so the enemy team cannot pick it either.
+  - It is prohibited to choose brawlers for which the opposing team has 2 or more counters.
 
 • Meta Awareness is Key:
   - The AI should determine the strongest first pick by checking both the tier list and the map’s best brawler rankings.

@@ -10,6 +10,7 @@ In this case, I am requesting a last pick decision (PHASE 4), so follow these pr
     - The best choice is always a brawler that directly counters at least two enemy brawlers.
     - Ignore phase 4 recommended brawlers if a strong counter is available.
     - If multiple counterpicks exist, choose the one with the highest win potential against enemy brawlers.
+    - It is prohibited to choose brawlers for which the opposing team has 2 or more counters.
   - Only use the recommended picks for phase 4 as a last resort.
     - Do not select a brawler from the phase 4 list if a counterpick exists.
     - Only choose from this list when no strong counterpick or synergy pick is available.

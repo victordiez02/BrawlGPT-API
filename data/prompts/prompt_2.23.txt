@@ -14,6 +14,7 @@ In this case, I am requesting a 2nd & 3rd pick decision (PHASE 2), so follow the
   - Build a strong synergy between the two picks:
     - Example: Tank + Healer, Control + Assassin, or Brawler + Counter to its Weakness.
     - Avoid synergies that sacrifice raw power if stronger standalone picks are available.
+  - It is prohibited to choose brawlers for which the opposing team has 2 or more counters.
 
 • Decision-Making Process:
   - Avoid easily counterable picks—since the enemy immediately responds with their 4th & 5th picks, you must be careful about picking brawlers that can be hard countered.

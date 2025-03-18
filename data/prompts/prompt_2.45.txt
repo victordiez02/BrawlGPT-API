@@ -15,6 +15,7 @@ In this case, I am requesting a 4th & 5th pick decision (PHASE 3), so follow the
   - Ensure good synergy between the two picks:
     - If a strong brawler synergy (e.g., Tank + Healer) is available, it can be picked.
     - Alternatively, picking a hard counter to an enemy brawler alongside a neutral pick can also be a strong strategy.
+  - It is prohibited to choose brawlers for which the opposing team has 2 or more counters.
 
 • Decision-Making Process:
   - Avoid weak or easily counterable picks—while these picks won’t be countered as heavily as the 2nd & 3rd picks, they still must not create a major disadvantage.

@@ -455,8 +455,8 @@ def generate_final_prompt(phase, selected_map, maps, brawlers, banned_brawlers, 
         raise ValueError(f"The selected map '{selected_map}' is not found in the 'maps' dictionary.")
 
     # Guardar el archivo final
-    #with open(final_prompt_path, "w", encoding="utf-8") as final_file:
-    #    final_file.write(final_content)
+    with open(final_prompt_path, "w", encoding="utf-8") as final_file:
+        final_file.write(final_content)
 
     print(f"Final prompt file created at: {final_prompt_path}")
 

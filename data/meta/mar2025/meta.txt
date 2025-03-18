@@ -32,7 +32,7 @@ El Primo: Cordelius | Gale | Shelly | Hank
 Emz: Mortis | Barley | Juju | Larry | Janet
 Eve: Piper | Penny | Janet | Max
 Fang: Clancy | Otis | Shelly | Gale | Finx
-Frank: Antitank | Primo | Ollie
+Frank: Antitank | El Primo | Ollie
 Gale: Janet | Amber | Thrower | Penny
 Gene: Mr. P | Penny | Tara | Eve | Charlie | Belle
 Gray: Mr. P | Charlie | Gus | Ollie
@@ -44,7 +44,7 @@ Jacky: Frank | Gale | Rosa
 Janet: Frank | Carl | Kenji | Belle
 Jessie: Thrower | Belle | Squeak
 Juju: Frank | Tick | Larry | Wallbreaker
-Kenji: Frank | Draco | Primo
+Kenji: Frank | Draco | El Primo | Griff
 Kit: Charlie | Cordelius | R-T | Chester
 Larry: Tick | Edgar | Kenji | Ollie
 Leon: Crow | Stu | Pearl | Finx

@@ -9,7 +9,7 @@ Este proyecto trata de la creación de una API que dado un 🔶 **draft** en Bra
 Incluye la lógica de selección y baneo de brawlers, integración con 🔴 **Gemini AI** para recomendaciones y un sistema modular bien estructurado.<br>  
 La idea es usarla para llamarla en una pagina web, la cual también es de código abierto. Esta página recoge la información del draft del usuario de una forma cómoda y atracriva para después llamar a la API y recibir las respuestas de la IA para poder mostrarlas de nuevo en la página en unos pocos segundos. Puedes consultarla en mi perfil o en el botón siguiente.
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Brawl%20Draft%20Magic-blue?style=for-the-badge&logo=github)](https://github.com/victordiez02/BrawlGPT-App.git)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-BrawlGPT%20App-blue?style=for-the-badge&logo=github)](https://github.com/victordiez02/BrawlGPT-App.git)
 
 La motivación de este proyecto es entender el funcionamiento de una API y su creación en Python. Esta es la primera que he creado, con ayuda de la librería 🟢 **FastAPI**.
 

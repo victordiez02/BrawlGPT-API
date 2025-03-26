@@ -15,6 +15,17 @@ La motivación de este proyecto es entender el funcionamiento de una API y su cr
 
 ---
 
+## 🔗 Prueba la API en línea
+
+La API está desplegada públicamente en Render usando un plan gratuito, por lo que puede tardar unos segundos en iniciarse si ha estado inactiva.
+Está protegida con una clave de acceso sencilla para evitar abusos en el entorno gratuito.
+
+🛡️ Clave de acceso requerida: 7777777
+
+<div align="center"> <a href="https://brawlgpt-api.onrender.com/docs" target="_blank"> <img src="https://img.shields.io/badge/🌐%20Abrir%20Documentación%20de%20la%20API-Click%20Aquí-blueviolet?style=for-the-badge" alt="Abrir documentación de la API"> </a> </div>
+
+---
+
 ## 💡 **Ejemplo de petición a la API**
 👉 **Enviamos estos datos al endpoint `/draft`**
 ```json
@@ -42,13 +53,13 @@ Una vez que estos datos son enviados, se genera un prompt largo que ha sido conf
   "gemini_response": {
     "gemini_suggestions": [
         {
-            "brawlers": ["Maisie", "Stu"],
+            "brawlers": "Maisie + Stu",
             "probability": 75,
             "explanationUSA": "Stu's mobility and damage output are strong, and Max provides support with speed.",
             "explanationESP": "La movilidad y el daño de Stu son fuertes, y Max proporciona soporte con velocidad."
         },
         {
-            "brawlers": ["Maisie", "Rico"],
+            "brawlers": "Maisie + Rico",
             "probability": 70,
             "explanationUSA": "Good synergy between Maisie and Rico, offering both control and high damage.",
             "explanationESP": "Buena sinergia entre Maisie y Rico, ofreciendo tanto control como alto daño."
